@@ -11,7 +11,12 @@ background-color: teal;
 margin: 1px;
 border-radius: 10px;
 transition: all 0.5s;
-border: 2px solid darkkhaki;}
+border: 2px solid darkkhaki;
+ animation: myslides; animation-duration: 5s;
+ animation-delay: 0s;
+ animation-iteration-count: infinite;
+ animation-play-state: running;
+}
 .box :hover{background-color: turquoise;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;}
     body{display: flex;
@@ -19,4 +24,9 @@ border: 2px solid darkkhaki;}
 align-items: center;
 justify-content: center;
 height: 100vh;}
+@keyframes myslides {
+    form{margin-left: 100%;}
+to{margin: 0%;}
+}
+
 
